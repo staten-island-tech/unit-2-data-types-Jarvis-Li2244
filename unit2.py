@@ -10,4 +10,14 @@ for i in values:
 print(values[5])
 
 x = "this is a thing"
-y
+y = x.split( )
+z = y[0]
+print(y)
+print(z)
+
+
+x = "placeholder message"
+y = x.split( )
+print(y)
+len(y)
+print(len)
