@@ -18,6 +18,6 @@ print(z)
 
 x = "placeholder message"
 y = x.split( )
+
 print(y)
-len(y)
-print(len)
+print(len(y))
