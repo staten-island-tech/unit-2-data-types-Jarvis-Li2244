@@ -7,4 +7,7 @@ print(values)
 for i in values:
     print(i)
 
-print(values[7])
+print(values[5])
+
+x = "this is a thing"
+y
