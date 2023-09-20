@@ -16,7 +16,7 @@ print(y)
 print(z)
 
 
-x = "placeholder message"
+x = input("Enter a message: ")
 y = x.split( )
 
 print(y)
@@ -28,19 +28,3 @@ def calc(x):
     else:
         print("even")
 
-def tip(x):
-    service = input("how was the service?: ")
-    if service == "bad":
-        x = x * 0.00
-        print(f'${x} is your tip.')
-    elif service == "okay":
-        x = x * .15
-        print(f'${x} is your tip.')
-    elif service == "good":
-        x = x * .20
-        print(f'${x} is your tip.')
-    else:
-        x = x * .25
-        print(f'${x} is your tip.')
-
-tip(32638)
