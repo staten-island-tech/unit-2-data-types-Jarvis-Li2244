@@ -28,3 +28,43 @@ def calc(x):
     else:
         print("even")
 
+def tip(x):
+    service = input("how was the service?: ")
+    if service == "bad":
+        x = x * 0
+        print(f'${x} is your tip.')
+    elif service == "okay":
+        x = x * .15
+        print(f'${x} is your tip.')
+    elif service == "good":
+        x = x * .20
+        print(f'${x} is your tip.')
+    elif service == "great":
+        x = x * .25
+        print(f'${x} is your tip.')
+    else:
+        print("Error, please try again.")
+
+
+def factors(z,x):
+    if z > x:
+        print("End")
+    else:
+        if x % z == 0:
+            print(z)
+            z += 1
+            factors(z,x)
+        else: 
+            z += 1
+            factors(z,x)
+
+
+def test(x):
+    for z in range(1, x):
+        if x % z == 0:
+                print(z)
+                z += 1
+        else: 
+                z += 1
+
+test(200)
