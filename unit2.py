@@ -67,4 +67,11 @@ def test(x):
         else: 
                 z += 1
 
-test(200)
+def gcf(x,y):
+    for z in range(x,0):
+        if x % z == 0:
+                if y % z == 0:
+                     print(z)
+                else:
+        else: 
+                z -= 1
