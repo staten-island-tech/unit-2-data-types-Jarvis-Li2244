@@ -16,4 +16,17 @@ def tip(x):
         print("Error, please try again.")
 
 
+def factors(a,x):
+    if a > x:
+        print("No More Factors")
+    else:
+        if x % a == 0:
+            print(a)
+            a += 1
+            factors(a,x)
+        else: 
+            a += 1
+            factors(a,x)
 
+
+factors(1,100)
