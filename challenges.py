@@ -16,19 +16,4 @@ def tip(x):
         print("Error, please try again.")
 
 
-def factors(x):
-    z = 0
-    def test(x):
-        z += 1
-        y = z
-        if y == x:
-            print("end")
-        else:
-            if x % y == 0:
-                print(y)
-                test(x)
-            else:
-                test(x)
-
-factors(25)
 
