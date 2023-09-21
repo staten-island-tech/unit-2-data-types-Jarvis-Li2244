@@ -73,5 +73,8 @@ def gcf(x,y):
                 if y % z == 0:
                      print(z)
                 else:
+                    z -= 1
         else: 
-                z -= 1
+            z -= 1
+
+gcf(30,60)
