@@ -77,4 +77,4 @@ def gcf(x,y):
         else: 
             z -= 1
 
-gcf(30,60)
+factors(1,74)
