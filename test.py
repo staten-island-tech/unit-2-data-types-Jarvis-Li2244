@@ -8,7 +8,7 @@ def gcf(x,y):
             if y % z == 0:
                 a = z
     return a
-print(gcf(10,50))
+# print(gcf(230,50))
 
 def GcF(z,x,y):
     if z < 1:
@@ -23,5 +23,19 @@ def GcF(z,x,y):
         else: 
             z -= 1
             GcF(z,x,y)
-GcF(30,30,490)
+# GcF(30,30,490)
 
+
+def factors(z,x):
+    while z <= x:
+        if x % z == 0:
+            print(z)
+            z += 1
+        else: 
+            z += 1
+
+# factors(1,74)
+
+x = "23"
+y = [*x]
+print(len(y))
