@@ -28,5 +28,25 @@ def factors(a,x):
             a += 1
             factors(a,x)
 
+def GcF(x,y):
+    if x > y :
+        z = y
+    else: 
+        z = x
+    while z >= 1:
+        if x % z == 0:
+            if y % z == 0:
+                return print(z)
+            else:
+                z -= 1
+        else: 
+            z -= 1
+GcF(48,672)
 
-factors(1,100)
+def gcd(x, y):
+    while(y):
+        x, y = y, x % y
+        print(x, y)
+    return abs(x)
+
+gcd(48, 372)

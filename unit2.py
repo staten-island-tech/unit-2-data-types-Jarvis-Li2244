@@ -28,23 +28,26 @@ def calc(x):
     else:
         print("even")
 
-def tip(x):
-    service = input("how was the service?: ")
-    if service == "bad":
-        x = x * 0
-        print(f'${x} is your tip.')
-    elif service == "okay":
-        x = x * .15
-        print(f'${x} is your tip.')
-    elif service == "good":
-        x = x * .20
-        print(f'${x} is your tip.')
-    elif service == "great":
-        x = x * .25
-        print(f'${x} is your tip.')
-    else:
-        print("Error, please try again.")
 
+def bill(x):
+    x = input("What was your bill?: $")
+    service = input("How was the service?: ")
+    x = float(x)
+    if service.lower() == "bad":
+        y = x * 0
+    elif service.lower() == "okay":
+        y = x * .15
+    elif service.lower() == "good":
+        y = x * .20
+    elif service.lower() == "great":
+        y = x * .25
+    else:
+        print("That's not how the service was.. Try again.")
+        bill(x)
+    print(f'${y} is your tip.')
+    y = int(y)
+    print(f'Here is your total: ${y + x}')
+bill(x)
 
 def factors(z,x):
     if z > x:
@@ -77,4 +80,3 @@ def gcf(x,y):
         else: 
             z -= 1
 
-factors(1,74)
