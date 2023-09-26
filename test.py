@@ -23,7 +23,7 @@ def GcF(z,x,y):
         else: 
             z -= 1
             GcF(z,x,y)
-# GcF(10,10,25)
+# GcF(30,30,490)
 
 
 def factors(z,x):
@@ -34,4 +34,23 @@ def factors(z,x):
         else: 
             z += 1
 
-factors(1,1000)
+# factors(1,74)
+
+def factors(x):
+    z = x
+    while z > 0:
+        if x % z == 0:
+            print(z)
+            z -= 1
+        else: 
+            z -= 1
+
+factorsx = []
+factorsy = []
+def g(x,y):
+    factors(x)
+    list.append(factors(x))
+
+    factors(y)
+    
+g(10,24)
