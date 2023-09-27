@@ -45,12 +45,18 @@ def factors(x):
         else: 
             z -= 1
 
-factorsx = []
-factorsy = []
-def g(x,y):
-    factors(x)
-    list.append(factors(x))
 
-    factors(y)
-    
-g(10,24)
+
+eastbound = input("True or False: ")
+westbound = input("True or False: ")
+
+if eastbound:
+    if westbound:
+        print(not(eastbound and westbound))
+    else:
+        print(not(eastbound and westbound))
+else:
+    if westbound:
+        print(not(eastbound and westbound))
+    else:
+        print(not(eastbound and westbound))
