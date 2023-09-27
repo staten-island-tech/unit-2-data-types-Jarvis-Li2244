@@ -49,4 +49,4 @@ def gcd(x, y):
     print(x)
     return abs(x)
 
-gcd(48, 372)
+gcd(48, 345)
