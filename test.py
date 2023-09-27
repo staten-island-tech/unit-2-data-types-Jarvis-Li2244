@@ -45,15 +45,7 @@ def factors(x):
         else: 
             z -= 1
 
-factorsx = []
-factorsy = []
-def g(x,y):
-    factors(x)
-    list.append(factors(x))
 
-    factors(y)
-    
-g(10,24)
 def gcf(x,y):
     if x > y:
         b = x
