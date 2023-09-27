@@ -41,12 +41,12 @@ def GcF(x,y):
                 z -= 1
         else: 
             z -= 1
-GcF(48,672)
+#GcF(48,672)
 
 def gcd(x, y):
     while(y):
         x, y = y, x % y
-        print(x, y)
+    print(x)
     return abs(x)
 
-gcd(48, 372)
+gcd(48, 345)
