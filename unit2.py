@@ -44,8 +44,8 @@ def bill(x):
     else:
         print("That's not how the service was.. Try again.")
         bill(x)
-    print(f'${y} is your tip.')
     y = int(y)
+    print(f'${y} is your tip.')
     print(f'Here is your total: ${y + x}')
 bill(x)
 

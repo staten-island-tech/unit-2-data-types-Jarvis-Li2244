@@ -66,18 +66,18 @@ def west(y):
 
 
 def traffic():
-    x = input("True or False: ")
-    if x.lower == "true":
-        x = True
+    eastbound = input("True or False: ")
+    if eastbound.lower == "true":
+        eastbound = True
     else:
-        x = False
-    y = input("True or False: ")
-    if y.lower == "true":
-        y = True
+        eastbound = False
+    westbound = input("True or False: ")
+    if westbound.lower == "true":
+        westbound = True
     else:
-        y = False
-    eastbound = x
-    westbound = y
+        westbound = False
+        print(westbound)
+    print(not(eastbound and westbound))
     if eastbound == True:
         if westbound == True:
             print(not(eastbound and westbound))
