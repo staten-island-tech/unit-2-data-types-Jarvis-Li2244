@@ -53,7 +53,7 @@ def traffic(x, y):
         print(not(x == y))
     else:
         print("Error, try again.")
-traffic(x, y)
+
 
 def gcf(x,y):
     if x > y:
