@@ -45,50 +45,15 @@ def factors(x):
         else: 
             z -= 1
 
+x = True
+y = False
 
-
-
-
-def east(x):
-    x = input("True or False: ")
-    if x.lower == "true":
-        x = True
+def traffic(x, y):
+    if type(x) == bool and type(y) == bool:
+        print(not(x == y))
     else:
-        x = False
-    return x
-def west(y):
-    y = input("True or False: ")
-    if y.lower == "true":
-        y = True
-    else:
-        y = False
-    return y
-
-
-def traffic():
-    eastbound = input("True or False: ")
-    if eastbound.lower == "true":
-        eastbound = True
-    else:
-        eastbound = False
-    westbound = input("True or False: ")
-    if westbound.lower == "true":
-        westbound = True
-    else:
-        westbound = False
-        print(westbound)
-    print(not(eastbound and westbound))
-    if eastbound == True:
-        if westbound == True:
-            print(not(eastbound and westbound))
-        else:
-            print(not(eastbound and westbound))
-    else:
-        if westbound == True:
-            print(not(eastbound and westbound))
-        else:
-            print(not(eastbound and westbound))
-traffic()
+        print("Error, try again.")
+traffic(x, y)
 
 def gcf(x,y):
     if x > y:
@@ -175,5 +140,3 @@ def listin(x,y):
         if i in factory:
             cf.append(i)
     print(cf[-1])
- 
-
