@@ -62,23 +62,20 @@ def factors(z,x):
         else: 
             z += 1
             factors(z,x)
-factors(1,24)
+#factors(1,24)
 
-def test(x):
-    for z in range(1, x):
+def GcF(x,y):
+    if x > y:
+        z = y
+    else: 
+        z = x
+    while z >= 1:
         if x % z == 0:
-                print(z)
-                z += 1
-        else: 
-                z += 1
-
-def gcf(x,y):
-    for z in range(x,0):
-        if x % z == 0:
-                if y % z == 0:
-                     print(z)
-                else:
-                    z -= 1
+            if y % z == 0:
+                return print(z)
+            else:
+                z -= 1
         else: 
             z -= 1
+#GcF(720,3234)
 
