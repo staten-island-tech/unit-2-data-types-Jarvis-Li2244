@@ -1,3 +1,4 @@
+'''
 x = 3
 y = float(3)
 
@@ -21,15 +22,16 @@ y = x.split()
 
 print(y)
 print(len(y))
+'''
 
 def calc(x):
     if x % 2 == 1:
         print("odd")
     else:
         print("even")
+#calc(263)
 
-
-def bill(x):
+def bill():
     x = input("What was your bill?: $")
     service = input("How was the service?: ")
     x = float(x)
@@ -47,7 +49,7 @@ def bill(x):
     y = int(y)
     print(f'${y} is your tip.')
     print(f'Here is your total: ${y + x}')
-bill(x)
+#bill()
 
 def factors(z,x):
     if z > x:
@@ -60,7 +62,7 @@ def factors(z,x):
         else: 
             z += 1
             factors(z,x)
-
+factors(1,24)
 
 def test(x):
     for z in range(1, x):

@@ -29,7 +29,7 @@ def factors(a,x):
             factors(a,x)
 
 def GcF(x,y):
-    if x > y :
+    if x > y:
         z = y
     else: 
         z = x
@@ -41,7 +41,7 @@ def GcF(x,y):
                 z -= 1
         else: 
             z -= 1
-#GcF(48,672)
+GcF(720,3234)
 
 def gcd(x, y):
     while(y):
