@@ -28,20 +28,24 @@ def factors(a,x):
             a += 1
             factors(a,x)
 
-def GcF(x,y):
-    if x > y:
-        z = y
-    else: 
-        z = x
-    while z >= 1:
+
+def test(x):
+    for z in range(1, x):
         if x % z == 0:
-            if y % z == 0:
-                return print(z)
-            else:
-                z -= 1
+                print(z)
+                z += 1
+        else: 
+                z += 1
+
+def gcf(x,y):
+    for z in range(x,0):
+        if x % z == 0:
+                if y % z == 0:
+                     print(z)
+                else:
+                    z -= 1
         else: 
             z -= 1
-GcF(720,3234)
 
 def gcd(x, y):
     while(y):
@@ -49,4 +53,3 @@ def gcd(x, y):
     print(x)
     return abs(x)
 
-#gcd(48, 372)
