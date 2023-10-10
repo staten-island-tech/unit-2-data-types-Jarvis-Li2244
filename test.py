@@ -23,7 +23,7 @@ def GcF(z,x,y):
         else: 
             z -= 1
             GcF(z,x,y)
-GcF(490,30,490)
+#GcF(30,30,490)
 
 
 def factors(z,x):
