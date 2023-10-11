@@ -102,6 +102,7 @@ def listing(x,y):
     print(max(cf)) #***
 #*** These two lines perform the same action.
 
+listing(36,24)
 # for i in (anylist):
     # print(-i)
 # prints all values in the list as negative.
