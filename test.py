@@ -99,7 +99,7 @@ def listing(x,y):
                 cf.append(x)
     print(cf)
     print(cf[-1]) #***
-    print(max(cf)) #***
+    print(min(cf)) #***
 #*** These two lines perform the same action.
 
 listing(36,24)
